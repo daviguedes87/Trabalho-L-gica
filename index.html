@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Evolução na Capacidade de Processamento</title>
+<meta name="description" content="Linha do tempo ilustrada sobre a evolução da capacidade de processamento, das primeiras válvulas aos aceleradores de IA." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="terminal-nav">
+  <div class="titlebar">
+    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+  </div>
+  <nav aria-label="Navegação principal">
+    <a href="index.html" aria-current="page">Linha do Tempo</a>
+    <a href="historia.html">História Detalhada</a>
+    <a href="artigos.html">Artigos</a>
+    <a href="bibliografia.html">Bibliografia</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Evolução da Capacidade de Processamento</p>
+      <div class="crt-frame reveal">
+        <p id="typed-output"></p>
+      </div>
+      <p class="hero-sub lede">
+        Este blog acompanha a evolução da capacidade de processamento dos computadores —
+        das válvulas a vácuo aos aceleradores de inteligência artificial — através de uma
+        linha do tempo, uma análise histórica detalhada, artigos escritos por alunos e
+        as fontes usadas na pesquisa.
+      </p>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Marcos históricos</p>
+        <h2>Linha do tempo do processamento</h2>
+        <p class="lede">Cada ponto marca uma ruptura tecnológica que multiplicou a capacidade de cálculo disponível para a humanidade.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">1940s</span>
+          <h3>Válvulas a vácuo — o ENIAC</h3>
+          <p>O ENIAC (1945) usava cerca de 17.600 válvulas para realizar cálculos, ocupando uma sala inteira e consumindo dezenas de quilowatts de energia.</p>
+          <span class="metric-chip">~5.000 operações/segundo</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">1947–1950s</span>
+          <h3>O transistor substitui a válvula</h3>
+          <p>Criado nos Laboratórios Bell, o transistor era menor, mais confiável e consumia muito menos energia que as válvulas, permitindo máquinas mais compactas.</p>
+          <span class="metric-chip">redução drástica de tamanho e calor</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">1958–1961</span>
+          <h3>Circuito integrado</h3>
+          <p>Jack Kilby e Robert Noyce desenvolveram, de forma independente, o circuito integrado: vários transistores em uma única pastilha de silício.</p>
+          <span class="metric-chip">início da miniaturização em escala</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">1965</span>
+          <h3>Lei de Moore</h3>
+          <p>Gordon Moore observou que o número de transistores em um chip tendia a dobrar a cada período regular, previsão que orientou décadas de projetos de hardware.</p>
+          <span class="metric-chip">dobra aproximada a cada 18–24 meses</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">1971</span>
+          <h3>Intel 4004 — o primeiro microprocessador comercial</h3>
+          <p>Um processador inteiro em um único chip, usado inicialmente em calculadoras, abriu caminho para o computador pessoal.</p>
+          <span class="metric-chip">2.300 transistores · ~740 kHz</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">1980s–1990s</span>
+          <h3>Computação pessoal e corrida por clock</h3>
+          <p>Processadores como a família x86 popularizaram o computador doméstico; fabricantes competiam por frequências de clock cada vez mais altas.</p>
+          <span class="metric-chip">de MHz a centenas de MHz</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">2000s</span>
+          <h3>O limite térmico e a virada para múltiplos núcleos</h3>
+          <p>Ao esbarrar em limites de dissipação de calor, a indústria passou a colocar vários núcleos de processamento em um mesmo chip, em vez de apenas aumentar o clock.</p>
+          <span class="metric-chip">processadores dual-core e quad-core</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">2006–2010s</span>
+          <h3>GPUs e computação paralela massiva</h3>
+          <p>Placas de vídeo, originalmente feitas para gráficos, passaram a ser usadas para cálculo paralelo genérico (GPGPU), acelerando simulações científicas e, mais tarde, IA.</p>
+          <span class="metric-chip">milhares de núcleos simples em paralelo</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">2012–hoje</span>
+          <h3>Aceleradores de inteligência artificial</h3>
+          <p>Chips especializados (GPUs modernas, TPUs e NPUs) passaram a dominar o treinamento de redes neurais, redefinindo o que significa "capacidade de processamento".</p>
+          <span class="metric-chip">arquiteturas dedicadas a IA</span>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-year">Horizonte</span>
+          <h3>Computação quântica</h3>
+          <p>Ainda em fase experimental, promete resolver certas classes de problemas de forma radicalmente diferente da computação clássica binária.</p>
+          <span class="metric-chip">pesquisa em estágio inicial</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; Davi Guedes  |  Lara Worm</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    typeEffect('typed-output', 'A capacidade de processamento cresceu de milhares para trilhões de operações por segundo em menos de um século.', 26);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Artigos</title>
+<meta name="description" content="Espaço para alunos publicarem artigos sobre a evolução da capacidade de processamento e comentarem os artigos dos colegas." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="terminal-nav">
+  <div class="titlebar">
+    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+  </div>
+  <nav aria-label="Navegação principal">
+    <a href="index.html">Linha do Tempo</a>
+    <a href="historia.html">História Detalhada</a>
+    <a href="artigos.html" aria-current="page">Artigos</a>
+    <a href="bibliografia.html">Bibliografia</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:36px;">
+    <div class="container">
+      <p class="eyebrow">Espaço colaborativo</p>
+      <h1>Artigos dos alunos</h1>
+      <p class="hero-sub lede">
+        Publique seu artigo sobre a evolução da capacidade de processamento e comente os artigos dos colegas.
+      </p>
+      <div class="callout" style="margin-top:20px;">
+        <p><strong>Observação técnica:</strong> o site é estático (HTML, CSS e JavaScript) e fica hospedado no GitHub Pages,
+        sem servidor próprio. Os artigos e comentários são gravados num banco de dados na nuvem (<code>Supabase</code>),
+        acessado direto do navegador pela API REST. Por isso a turma inteira compartilha o mesmo conteúdo: o que você
+        escreve aqui aparece para qualquer colega, em qualquer computador.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="section-head">
+        <p class="eyebrow">Publicar</p>
+        <h2>Escreva seu artigo</h2>
+      </div>
+
+      <form id="article-form" class="form-card reveal">
+        <div class="form-row">
+          <label for="author">Seu nome</label>
+          <input type="text" id="author" name="author" placeholder="Ex.: Ana Souza" maxlength="60" required />
+        </div>
+        <div class="form-row">
+          <label for="title">Título do artigo</label>
+          <input type="text" id="title" name="title" placeholder="Ex.: Como a Lei de Moore mudou o hardware" maxlength="120" required />
+        </div>
+        <div class="form-row">
+          <label for="body">Texto do artigo</label>
+          <textarea id="body" name="body" placeholder="Escreva aqui o conteúdo do seu artigo sobre a evolução da capacidade de processamento..." maxlength="4000" required></textarea>
+          <p class="form-hint">Máximo de 4000 caracteres.</p>
+        </div>
+        <button type="submit" class="btn">Publicar artigo</button>
+      </form>
+
+      <div class="feed-head">
+        <div>
+          <p class="eyebrow">Publicados pela turma</p>
+          <h2 style="margin-bottom:0;">Artigos e comentários</h2>
+        </div>
+      </div>
+
+      <div id="articles-feed" aria-live="polite">
+        <div class="empty-state">// carregando artigos...</div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; Davi Guedes  |  Lara Worm</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

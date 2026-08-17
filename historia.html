@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>História Detalhada</title>
+<meta name="description" content="Texto histórico detalhado sobre a evolução da capacidade de processamento dos computadores." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="terminal-nav">
+  <div class="titlebar">
+    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+  </div>
+  <nav aria-label="Navegação principal">
+    <a href="index.html">Linha do Tempo</a>
+    <a href="historia.html" aria-current="page">História Detalhada</a>
+    <a href="artigos.html">Artigos</a>
+    <a href="bibliografia.html">Bibliografia</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:36px;">
+    <div class="container">
+      <p class="eyebrow">Leitura aprofundada</p>
+      <h1>A evolução da capacidade de processamento</h1>
+      <p class="hero-sub lede">
+        Do relé eletromecânico ao acelerador dedicado de inteligência artificial: como a busca por
+        mais velocidade de cálculo moldou a arquitetura dos computadores — e a própria disciplina
+        da programação.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div class="article-block reveal">
+        <span class="timeline-year">1940s</span>
+        <h2>Dos relés às válvulas: nascem os primeiros computadores eletrônicos</h2>
+        <p>
+          Antes dos circuitos eletrônicos, calculadoras mecânicas e relés eletromagnéticos eram usados para automatizar
+          cálculos, mas com velocidade muito limitada. A Segunda Guerra Mundial acelerou a pesquisa em máquinas de
+          cálculo para fins militares, como decifração de códigos e cálculo de trajetórias balísticas.
+        </p>
+        <p>
+          O ENIAC (Electronic Numerical Integrator and Computer), concluído em 1945 na Universidade da Pensilvânia,
+          é frequentemente citado como o primeiro computador eletrônico digital de uso geral. Ele usava milhares de
+          válvulas a vácuo, ocupava uma sala inteira e precisava de reconfiguração manual de cabos para trocar de
+          programa — um processo que hoje reconheceríamos como "programação de hardware".
+        </p>
+        <div class="callout">
+          <p><strong>Por que isso importa para a programação:</strong> nessa época não existia separação clara entre
+          "hardware" e "software". Programar significava, literalmente, religar circuitos.</p>
+        </div>
+      </div>
+
+      <div class="punchcard-divider" aria-hidden="true"></div>
+
+      <div class="article-block reveal">
+        <span class="timeline-year">1947–1950s</span>
+        <h2>O transistor: a base da eletrônica moderna</h2>
+        <p>
+          Em 1947, John Bardeen, Walter Brattain e William Shockley, nos Laboratórios Bell, desenvolveram o primeiro
+          transistor funcional. Comparado às válvulas, o transistor era menor, mais rápido, mais confiável e consumia
+          uma fração da energia, além de gerar muito menos calor.
+        </p>
+        <p>
+          Ao longo da década de 1950, os transistores gradualmente substituíram as válvulas nos computadores,
+          dando origem à chamada "segunda geração" de computadores. Isso reduziu drasticamente o tamanho físico das
+          máquinas e abriu caminho para arquiteturas mais complexas, já que era possível empacotar muito mais
+          componentes de comutação em um espaço menor.
+        </p>
+      </div>
+
+      <div class="punchcard-divider" aria-hidden="true"></div>
+
+      <div class="article-block reveal">
+        <span class="timeline-year">1958–1971</span>
+        <h2>Do circuito integrado ao microprocessador</h2>
+        <p>
+          O passo seguinte foi integrar múltiplos transistores em uma única peça de silício. Jack Kilby (Texas
+          Instruments, 1958) e Robert Noyce (Fairchild Semiconductor, 1959) desenvolveram, de forma independente,
+          o circuito integrado — o "chip". Essa inovação permitiu miniaturizar ainda mais os componentes e reduzir
+          o custo de produção em escala.
+        </p>
+        <p>
+          Em 1965, o co-fundador da Intel, Gordon Moore, publicou a observação que ficaria conhecida como
+          <em>Lei de Moore</em>: o número de transistores que cabem em um chip tende a dobrar em intervalos regulares
+          de tempo. Mais do que uma lei física, tornou-se uma meta que orientou o planejamento da indústria por
+          décadas.
+        </p>
+        <p>
+          Em 1971, a Intel lançou o <strong>4004</strong>, considerado o primeiro microprocessador comercial: um
+          processador completo contido em um único chip, com cerca de 2.300 transistores. Isso tornou viável, pela
+          primeira vez, produzir computadores pequenos e relativamente baratos — abrindo caminho direto para o
+          computador pessoal.
+        </p>
+        <ul>
+          <li>1971 — Intel 4004, primeiro microprocessador comercial de uso geral.</li>
+          <li>1974 — Intel 8080, usado em alguns dos primeiros computadores pessoais.</li>
+          <li>1978 — Intel 8086, origem da arquitetura x86 ainda usada hoje.</li>
+        </ul>
+      </div>
+
+      <div class="punchcard-divider" aria-hidden="true"></div>
+
+      <div class="article-block reveal">
+        <span class="timeline-year">1980s–1990s</span>
+        <h2>A era da corrida por clock</h2>
+        <p>
+          Com a popularização do computador pessoal, fabricantes como Intel, AMD e Motorola competiram
+          principalmente aumentando a frequência de clock dos processadores — ou seja, quantos ciclos de
+          processamento eles executavam por segundo. Nessas duas décadas, os processadores saíram da casa dos
+          megahertz iniciais para várias centenas de megahertz.
+        </p>
+        <p>
+          Paralelamente, avanços em compiladores e linguagens de programação de mais alto nível (C, depois C++,
+          entre outras) permitiram que desenvolvedores tirassem proveito desse hardware cada vez mais rápido sem
+          escrever diretamente em linguagem de máquina para cada novo chip.
+        </p>
+      </div>
+
+      <div class="punchcard-divider" aria-hidden="true"></div>
+
+      <div class="article-block reveal">
+        <span class="timeline-year">2000s</span>
+        <h2>O limite térmico e a virada para múltiplos núcleos</h2>
+        <p>
+          No início dos anos 2000, aumentar o clock esbarrou em um limite físico: chips rodando em frequências mais
+          altas geravam calor demais para ser dissipado com eficiência, em um fenômeno que ficou conhecido como
+          "power wall" (parede de energia).
+        </p>
+        <p>
+          A resposta da indústria foi mudar de estratégia: em vez de um único núcleo cada vez mais rápido, os
+          fabricantes passaram a colocar <strong>múltiplos núcleos de processamento</strong> em um mesmo chip,
+          permitindo executar tarefas em paralelo. Essa mudança teve um impacto direto na programação: passou a ser
+          necessário escrever software que aproveitasse o paralelismo, algo bem mais complexo do que programar para
+          um único fluxo de execução sequencial.
+        </p>
+        <div class="callout">
+          <p><strong>Impacto na programação:</strong> conceitos como threads, concorrência e sincronização, antes
+          restritos a nichos específicos, tornaram-se conhecimento essencial para qualquer desenvolvedor.</p>
+        </div>
+      </div>
+
+      <div class="punchcard-divider" aria-hidden="true"></div>
+
+      <div class="article-block reveal">
+        <span class="timeline-year">2006–2010s</span>
+        <h2>GPUs: processamento paralelo em massa</h2>
+        <p>
+          As placas de vídeo (GPUs) foram originalmente projetadas para renderizar gráficos, uma tarefa que exige
+          realizar o mesmo tipo de cálculo simples em milhares de pixels simultaneamente. Pesquisadores perceberam
+          que essa mesma arquitetura — muitos núcleos simples trabalhando em paralelo — era útil para outros
+          problemas de cálculo intensivo, como simulações científicas.
+        </p>
+        <p>
+          A partir de 2006, com o lançamento de plataformas como o CUDA da NVIDIA, ficou mais fácil programar GPUs
+          para tarefas de uso geral (o chamado GPGPU, <em>General-Purpose computing on GPU</em>). Isso preparou o
+          terreno para a explosão da inteligência artificial baseada em redes neurais na década seguinte, já que o
+          treinamento desses modelos depende fortemente de operações matriciais paralelizáveis.
+        </p>
+      </div>
+
+      <div class="punchcard-divider" aria-hidden="true"></div>
+
+      <div class="article-block reveal">
+        <span class="timeline-year">2012–hoje</span>
+        <h2>Aceleradores dedicados e a era da inteligência artificial</h2>
+        <p>
+          Com o crescimento do aprendizado profundo (deep learning), a indústria passou a desenvolver chips
+          especializados para essa carga de trabalho específica: GPUs cada vez mais otimizadas para IA, TPUs
+          (Tensor Processing Units, da Google) e NPUs (Neural Processing Units) embutidas até em smartphones.
+        </p>
+        <p>
+          A "capacidade de processamento" deixou de ser medida apenas em clock ou número de núcleos genéricos, e
+          passou a ser avaliada também por métricas específicas de IA, como operações de ponto flutuante por
+          segundo dedicadas a multiplicação de matrizes.
+        </p>
+      </div>
+
+      <div class="punchcard-divider" aria-hidden="true"></div>
+
+      <div class="article-block reveal">
+        <span class="timeline-year">Horizonte</span>
+        <h2>O que vem depois: computação quântica e novos materiais</h2>
+        <p>
+          Com a miniaturização de transistores se aproximando de limites físicos em escala atômica, pesquisadores
+          exploram alternativas como a computação quântica, que usa qubits em vez de bits binários clássicos, e
+          novos materiais semicondutores. Essas tecnologias ainda estão em estágio experimental, mas prometem
+          abordar categorias de problemas hoje inviáveis para computadores clássicos.
+        </p>
+        <p class="lede">
+          Para conhecer as fontes utilizadas na construção deste histórico, consulte a
+          <a href="bibliografia.html">página de bibliografia</a>.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; Davi Guedes  |  Lara Worm</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
