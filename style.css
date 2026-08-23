@@ -491,3 +491,43 @@ footer p {
   .biblio-item { grid-template-columns: 1fr; }
   .comment-form .inline-row { flex-direction: column; }
 }
+/* Adicione este bloco ao final do seu style.css */
+
+.timeline-photo {
+  margin: 14px 0;
+  padding: 6px;
+  background: var(--panel, #121722);
+  border: 1px solid var(--wire, #2a3040);
+  border-radius: 4px;
+}
+
+.timeline-photo img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 2px;
+  filter: grayscale(15%) contrast(1.05);
+}
+
+.timeline-photo figcaption {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--text, #e8e6df);
+  opacity: 0.65;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.timeline-photo figcaption a {
+  color: var(--amber, #ffb000);
+  text-decoration: none;
+}
+
+.timeline-photo figcaption a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .timeline-photo img {
+    height: 180px;
+  }
+}
